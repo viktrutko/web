@@ -1,0 +1,195 @@
+body {
+  top: 0px;
+  background: url(image/fon3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  background-attachment: fixed;
+}
+p {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Courier New;
+  transition: .5s ease;
+  padding-left: 2%;
+  font-size: 28px;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 70px;
+  font-family: segoe script;
+  font-weight: bold;
+  margin:0 0 5px;
+  text-shadow: red 0 0 15px;
+}
+ h2 {
+  margin: 1em 0 0.5em 0;
+  text-transform: uppercase;
+  color:  white;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  text-shadow: red 0 0 15px;
+  padding-top: 2%;
+}
+.all{
+  display: block;
+  width:80%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  margin-top: 1%;
+  background-attachment: fixed;
+
+}
+.all > h3{
+  border-top: 1px solid #e5e5e5;
+}
+.buttonup {
+  width: 5%;
+  position:fixed;
+  bottom:20px;
+  right:15px;
+}
+.f2 {
+  float: right;
+  width: 35%;
+  padding-left: 2%; 
+}
+.f1 {
+  float: left;
+  width: 35%;
+  padding-right: 2%; 
+}
+#tattoo ul{
+  display: none;
+  background-color: rgba(130, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+}
+#tattoo li:hover ul { display: block; }
+#tattoo, #tattoo ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#tattoo {
+  height: 30px;
+  background-color:  rgba(97, 11, 11,0.7);
+  display: flex;
+  justify-content: center;
+}
+#tattoo li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#tattoo li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #fff;
+  font-family: Courier New;
+  text-decoration: none;
+  text-align: center;
+}
+#tattoo ul li { float: none; }
+#tattoo li:hover { background-color:  #aa0d0d; }
+#tattoo ul li:hover { background-color: rgba(255, 255, 255,0.4); }
+.mob_menu {
+  display: none;
+}
+#ani {
+  -webkit-animation: ani 2s linear infinite;
+  animation: ani 2s linear infinite;
+}
+@-webkit-keyframes ani {
+  0% { color: rgb(128, 0, 0); }
+  50% { color: rgb(183, 65, 14); }
+  100% { color: rgb(128, 0, 0); }
+}
+@keyframes ani {
+  0% { color: rgb(255, 255, 255); }
+  15% {color: rgb(242, 169, 169);}
+  30% { color: rgb(244, 134, 134); }
+  45% { color: rgb(242, 101, 101);}
+  50% { color: rgb(240, 80, 80); }
+  65% { color: rgb(242, 101, 101);}
+  70% { color: rgb(244, 134, 134); }
+  85% {color: rgb(244, 150, 150);}
+  100% { color: rgb(255, 255, 255); }
+}
+.f1:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.f2:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+@media screen and (max-width: 800px){
+    html, 
+    body{
+      top: 0px;
+        margin:0;
+        overflow-x:hidden; 
+    }
+    .menu{
+      width: 40%;
+    }
+    .left{
+      display: none;
+    }
+    .right{
+      display: none;
+    }
+    .img{
+      margin-left: 5px;
+      width: 95%;
+    }
+    #tattoo  {
+    display: none;
+    }
+    .mob_menu{
+        display: block;
+        width: 25%;
+    }
+    h1{
+      font-size: 40pt;
+      margin-left: 35px;
+    }
+    h2{
+      font-size: 18pt;
+    }
+    p{
+      font-size: 14pt;
+    }
+    div > p {
+      width: 100%;
+    }
+    div > img {
+      width: 100%;
+    }
+    div {
+      display: block;
+    }
+    .all {
+      display: block;
+      padding: 20px;
+      }
+    .f1{
+      
+      width: 100%;
+    }
+    .f2{
+      
+      width: 100%;
+    }
+    .buttonup{
+      width: 10%;
+    }
+    }

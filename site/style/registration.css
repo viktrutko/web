@@ -1,0 +1,230 @@
+body {
+  top: 0px;
+  background: url(image/fon3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  background-attachment: fixed;
+}
+input:not([type="checkbox"]){
+  border:2px solid rgba(255,255,255,.5);
+  font-size:1.75em;
+  color:rgba(255,255,255,.5);
+  border-radius:.25em;
+  background:transparent;
+  transition:all .100s;
+  outline: none;
+  width: 95%;
+
+}
+p {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Courier New;
+  font-size: 18pt; 
+  transition: .5s ease;
+  color: rgba(255,255,255,.5);
+}
+label { 
+  color: #610B0B; 
+  font-size: 24pt; 
+  font-family: Courier New; 
+  font-weight: bold; 
+}
+.registration {
+  display: block;
+  width:50%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  margin-top: 5%;
+  background-attachment: fixed;
+}
+.identation{ 
+  margin-bottom: 2%; 
+} 
+button { 
+  cursor: pointer; 
+  background-color: #000; 
+  padding-left: 8px; 
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-family: Magneto; 
+  color: #fff; 
+  text-shadow: red 0 0 15px;
+  font-size: 30px; 
+  border: 2px solid rgba(255,255,255,.5);  
+  border-radius: 3px; 
+  margin-left: 30%;
+} 
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 32pt;
+  font-family: magneto;
+  text-shadow: red 0 0 15px;
+  font-weight: bold;
+}
+input[type=password] {
+  margin-bottom: 2%;
+  padding: 5px;
+  text-align: right; 
+}
+input[type="text"]{
+  padding: 5px;
+}
+input[type="radio"]{
+  display: flex;
+  width: 10%;
+}
+select{
+  padding: 5px;
+  cursor: pointer;
+  background: transparent; 
+  font-size: 18px; 
+  height: 10%;   
+  border: 2px solid rgba(255,255,255,.5);
+  border-radius: 5px;
+  color: rgba(255,255,255,.5);
+  font-weight: bold;
+  font-family: Courier New;
+  display: table;
+  width: 25%;
+  outline: none;
+}
+option{
+  color: #000; 
+  font-weight: bold;
+}
+.buttonup {
+  width:5%; 
+  position:fixed;
+  bottom:20px;
+  right:15px;
+}
+.mob_menu {
+  display: none;
+}
+#tattoo ul{
+  display: none;
+  background-color: rgba(130, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+}
+#tattoo li:hover ul {display: block;}
+#tattoo, #tattoo ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#tattoo {
+height: 30px;
+background-color:  rgba(97, 11, 11,0.7);
+display: flex;
+justify-content: center;
+}
+#tattoo li {
+float: left;
+position: relative;
+height: 100%;
+}
+#tattoo li a {
+display: block;
+padding: 6px;
+width: 100px;
+color: #fff;
+font-family: Courier New;
+text-decoration: none;
+text-align: center;
+}
+#tattoo ul li { float: none; }
+#tattoo li:hover { background-color:  #aa0d0d; }
+#tattoo ul li:hover { background-color: rgba(255, 255, 255,0.4); }
+#ani {
+  -webkit-animation: ani 2s linear infinite;
+  animation: ani 2s linear infinite;
+}
+@-webkit-keyframes ani {
+  0% { color: rgb(128, 0, 0); }
+  50% { color: rgb(183, 65, 14); }
+  100% { color: rgb(128, 0, 0); }
+}
+@keyframes ani {
+  0% { color: rgb(255, 255, 255); }
+  15% {color: rgb(242, 169, 169);}
+  30% { color: rgb(244, 134, 134); }
+  45% { color: rgb(242, 101, 101);}
+  50% { color: rgb(240, 80, 80); }
+  65% { color: rgb(242, 101, 101);}
+  70% { color: rgb(244, 134, 134); }
+  85% {color: rgb(244, 150, 150);}
+  100% { color: rgb(255, 255, 255); }
+}
+@media screen and (max-width: 800px){
+    html, 
+    body{
+      min-width: 100% ;
+      margin:0;
+      overflow-x:hidden; 
+      margin-top: 1%;
+    }
+    .menu{
+      width: 40%;
+    }
+    .left{
+      display: none;
+    }
+    .right{
+      display: none;
+    }
+    .img{
+      margin-left: 5px;
+      width: 95%;
+    }
+    #tattoo  {
+    display: none;
+    }
+    .mob_menu{
+        display: block;
+        width: 25%;
+    }
+    h1{
+      font-size: 20pt;
+    }
+    div > p {
+      width: 100%;
+    }
+    div > img {
+      width: 100%;
+    }
+    div {
+      display: block;
+    }
+    select{
+      width: 50%;
+    }
+    label{
+      font-size: 20pt;
+    }
+    .registration {
+      display: block;
+      padding: 20px;
+      width:80%;
+      }
+    .f1{
+      margin-left: 5px;
+      width: 100%;
+    }
+    .f2{
+      margin-left: 2px;
+      width: 95%;
+    }
+    .buttonup{
+      width: 10%;
+    }
+    button {
+      margin-left: 3%;
+    }
+}

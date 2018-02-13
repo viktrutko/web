@@ -1,0 +1,327 @@
+body {
+  top: 0px;
+  background: url(image/fon3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  background-attachment: fixed;
+}
+p {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Courier New;
+  transition: .5s ease;
+}
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  padding-right-right: 40px;
+  padding-right-left: 40px;
+  padding-right-bottom: 30px;
+  padding-right-top: 30px;
+  color: white;
+  font-size: 100pt;
+  font-family: Magneto;
+  font-weight: bold;
+  margin: 0 0 5px;
+  text-shadow: red 0 0 15px;
+}
+h2 {
+  margin: 1em 0 0.5em 0;
+  text-transform: uppercase;
+  color: white;
+  font-style: italic;
+  font-family: segoe script;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 54px;
+  text-shadow: red 0 0 15px;
+}
+h3 {
+  margin: 1em 0 0.5em 0;
+  color: #610B0B;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.all {
+  display: block;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-right: 40px;
+  margin-top: 5%;
+  background-attachment: fixed;
+}
+.left {
+  align-items: left;
+  width: 30%;
+  padding-right-top: 10px;
+  padding-right-bottom: 10px;
+  background-attachment: fixed;
+}
+.right {
+  align-items: left;
+  width: 30%;
+  background-attachment: fixed;
+}
+.buttonup {
+  width: 5%;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+.img {
+  width: 290px;
+  height: 230px;
+}
+.f1 {
+  float: right;
+  margin: 0 0 1em 1em;
+  width: 30%;
+}
+.f2 {
+  float: right;
+  margin: 0 0 1em 1em;
+  width: 25%;
+}
+.p1 {
+  margin: 1em 0 0.5em 0;
+  font-size: 20px;
+}
+.column {
+  display: inline-block;
+  width: 50%;
+  margin: 1%;
+  font-size: 0;
+}
+.container {
+  display: flex;
+  font-size: 0;
+}
+.mob_menu {
+  display: none;
+}
+#tattoo ul {
+  display: none;
+  background-color: rgba(130, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+}
+#tattoo li:hover ul {
+  display: block;
+}
+#tattoo,
+#tattoo ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#tattoo {
+  height: 30px;
+  background-color: rgba(97, 11, 11, 0.7);
+  display: flex;
+  justify-content: center;
+}
+#tattoo li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#tattoo li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #FFFFFF;
+  font-family: Courier New;
+  text-decoration: none;
+  text-align: center;
+}
+#tattoo ul li {
+  float: none;
+}
+#tattoo li:hover {
+  background-color: #aa0d0d;
+}
+#tattoo ul li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#ani {
+  -webkit-animation: ani 2s linear infinite;
+  animation: ani 2s linear infinite;
+}
+@-webkit-keyframes ani {
+  0% {
+    color: #800000;
+  }
+  50% {
+    color: #b7410e;
+  }
+  100% {
+    color: #800000;
+  }
+}
+@keyframes ani {
+  0% {
+    color: #ffffff;
+  }
+  15% {
+    color: #f2a9a9;
+  }
+  30% {
+    color: #f48686;
+  }
+  45% {
+    color: #f26565;
+  }
+  50% {
+    color: #f05050;
+  }
+  65% {
+    color: #f26565;
+  }
+  70% {
+    color: #f48686;
+  }
+  85% {
+    color: #f49696;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+.img:hover {
+  box-shadow: 1px 1px #b70909, 2px 2px #b70909, 3px 3px #b70909, 4px 4px #b70909, 5px 5px #b70909, 6px 6px #b70909, 7px 7px #b70909;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+.f2:hover {
+  box-shadow: 1px 1px #b70909, 2px 2px #b70909, 3px 3px #b70909, 4px 4px #b70909, 5px 5px #b70909, 6px 6px #b70909, 7px 7px #b70909;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+.f1:hover {
+  box-shadow: 1px 1px #b70909, 2px 2px #b70909, 3px 3px #b70909, 4px 4px #b70909, 5px 5px #b70909, 6px 6px #b70909, 7px 7px #b70909;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    top: 0px;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .menu {
+    width: 40%;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .img {
+    margin-left: 5px;
+    width: 95%;
+  }
+  #tattoo {
+    display: none;
+  }
+  .mob_menu {
+    display: block;
+    width: 25%;
+  }
+  h1 {
+    font-size: 70pt;
+    padding-right: 0.1px;
+    padding-left: 0.1px;
+    padding-bottom: 0.1px;
+    padding-top: 0.1px;
+  }
+  h2 {
+    font-size: 25pt;
+  }
+  .p1 {
+    font-size: 13pt;
+  }
+  div > p {
+    width: 100%;
+  }
+  div > img {
+    width: 100%;
+  }
+  div {
+    display: block;
+  }
+  .all {
+    display: block;
+    padding: 20px;
+  }
+  .f1 {
+    margin-left: 5px;
+    width: 100%;
+  }
+  .f2 {
+    margin-left: 2px;
+    width: 95%;
+  }
+  .container {
+    display: block;
+  }
+  .column {
+    width: 100%;
+    margin: 1%;
+  }
+  .buttonup {
+    width: 10%;
+  }
+}
+div:nth-child(15):after {
+  content: "15";
+}
+div:nth-child(14):after {
+  content: "14";
+}
+div:nth-child(13):after {
+  content: "13";
+}
+div:nth-child(12):after {
+  content: "12";
+}
+div:nth-child(11):after {
+  content: "11";
+}
+div:nth-child(10):after {
+  content: "10";
+}
+div:nth-child(9):after {
+  content: "9";
+}
+div:nth-child(8):after {
+  content: "8";
+}
+div:nth-child(7):after {
+  content: "7";
+}
+div:nth-child(6):after {
+  content: "6";
+}
+div:nth-child(5):after {
+  content: "5";
+}
+div:nth-child(4):after {
+  content: "4";
+}
+div:nth-child(3):after {
+  content: "3";
+}
+div:nth-child(2):after {
+  content: "2";
+}
+div:nth-child(1):after {
+  content: "1";
+}
